@@ -5,6 +5,7 @@ import helperfunctions                  # Helper functions
 startPointY = 0
 startPointX = 0
 coordinates = [0,0]
+mapCode = 1778324
 
 #########################################################################################################
 #                                                                                                       #
@@ -55,6 +56,4 @@ thislist = ["##################################################",
 coordinates = helperfunctions.searchForStart(thislist)
 startPointY = coordinates[0]
 startPointX = coordinates[1]
-
-
 

@@ -1,3 +1,4 @@
+# Helper function for looping through a list and looking for a character 'S'
 def searchForStart(list):
     listLength = len(list)
     for y in range(listLength):
@@ -6,3 +7,4 @@ def searchForStart(list):
             if list[y][x] == "S":
                 coordinates = [y,x]
                 return coordinates
+    return [0,0]
