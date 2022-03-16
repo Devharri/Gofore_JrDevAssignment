@@ -56,7 +56,7 @@ thislist = ["##################################################", # Copy assignm
 "#............#E..................................#",
 "##################################################"]
 
-# User helper function to define starting coordinates
+# Use helper function to define starting coordinates
 coordinates = helperfunctions.searchForStart(thislist)
 startPointY = coordinates[0]
 startPointX = coordinates[1]
