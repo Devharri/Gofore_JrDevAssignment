@@ -19,6 +19,8 @@ import helperfunctions                  # Helper functions
 #Define global variables here
 startPointY = 0                         # start point y-coordinate
 startPointX = 0                         # start point x-coordinate
+coordX = 0                              # variable for x-coordinate in loops
+coordY = 0                              # variable for y-coordinate in loops
 coordinates = [0,0]                     # start point coordinates as a list                  
 steps = 0                               # step count
 direction = 0                           # stepping direction 0 = up, 1 = right, 2 = down, 3 = left
@@ -61,10 +63,20 @@ startPointX = coordinates[1]
 
 print("Start point is: y=" + str(startPointY) + ", x=" + str(startPointX))
 
+coordY = startPointY
+coordX = startPointX
+
 while True:
     if direction == 0:
-        
-        break
+        if thislist[coordY-1][coordX] == 'E':
+            steps += 1
+            break
+        elif thislist[coordY-1][coordX] == '.':
+            steps += 1
+            coordY -= 1
+        elif thislist[coordY-1][coordX] == '#':
+            direction = 1
+            continue
     elif direction == 1:
         
         break
